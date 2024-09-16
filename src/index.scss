@@ -1,0 +1,33 @@
+@import './styles/functional/variables';
+@import './styles/functional/nullset';
+@import './styles/functional/mixins';
+
+
+:root {
+  color-scheme: light dark;
+  background-color: #242424;
+  font-size: 16px;
+}
+
+
+html{
+     scroll-behavior: smooth;
+     width: 100%;
+}
+html,
+body {
+	  min-width: $minWidth;
+    width: 100%;
+}
+body{
+    font-size: $fontSize;
+    display: flex;
+    flex-direction: column;
+}
+main{
+    flex-grow: 1;
+    width: 100%;
+    min-width: $minWidth;
+    display: flex;
+    flex-direction: column;
+}
